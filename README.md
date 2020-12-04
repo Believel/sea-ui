@@ -1,5 +1,9 @@
 # seaui
 
+## 官网
+
+https://d.umijs.org/zh-CN
+
 ## Getting Started
 
 Install dependencies,
@@ -25,3 +29,5 @@ Build library via `father-build`,
 ```bash
 $ npm run build
 ```
+
+# 控制路由生成
