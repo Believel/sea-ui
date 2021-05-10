@@ -1,4 +1,9 @@
-# seaui
+---
+name: seaui
+route: /
+edit: false
+sidebar: true
+---
 
 ## 官网
 
@@ -44,3 +49,25 @@ src # 组件库源码目录
 .umirc.ts  # dumi 配置文件（也可以是 config/config.ts）
 .fatherrc.ts # father-build 的配置文件，用于组件打包
 ```
+
+# 安装其他第三方包
+
+- `antd` 在 antd UI 库的基础上开发属于自己的组件库
+  - `antd`自己的`css` 文件在使用的时候自己需要全局引入
+  - 自己组件库的 css 文件也需要在项目中全局引入使用时才能生效
+
+# webpack 配置
+
+````js
+### webpack 配置
+
+```js
+{
+  loader: "less-loader",
+  options: {
+    outputStyle: "expanded",
+    javascriptEnabled: true,
+    modifyVars: require("包名/es/theme/customization")
+  }
+}
+````
