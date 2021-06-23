@@ -35,6 +35,10 @@ Build library via `father-build`,
 $ npm run build
 ```
 
+```js
+"docs:deploy": "gh-pages -d dist", // dist 是打包生成的目录
+```
+
 # 控制路由生成
 
 # 目录结构
